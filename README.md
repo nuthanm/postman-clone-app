@@ -18,3 +18,6 @@ Objective of this project is to avoid using external tool like postman for simpl
 # Reference:
 Youtube Playlist: [@IamTimCorey](https://www.youtube.com/playlist?list=PLLWMQd6PeGY3IxROaW7Hj8KFbRPg1x7mc),
 I learnt all these tips from this youtube playlist. If you are new checkit out his videos for indepth knowledge.
+
+# Important Youtube shorts/videos:
+- [Visual studio Tip 1: How to add the project reference in once clik](https://www.youtube.com/shorts/QYp3q1D9Jds)
