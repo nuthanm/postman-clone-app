@@ -1,10 +1,14 @@
-namespace PostManClone.UI
+namespace PostManClone.UI;
+
+public partial class Dashboard : Form
 {
-    public partial class Dashboard : Form
+    public Dashboard()
     {
-        public Dashboard()
-        {
-            InitializeComponent();
-        }
+        InitializeComponent();
+    }
+
+    private void apiClick_Click(object sender, EventArgs e)
+    {
+
     }
 }
