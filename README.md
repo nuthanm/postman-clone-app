@@ -14,7 +14,11 @@ Objective of this project is to avoid using external tool like postman for simpl
 - Json
 - Windows Forms
 - .NET 8
-  
+
+# Postman Windows Form Designs
+## Initial Design
+![image](https://github.com/nuthanm/postman-clone-app/assets/29816449/b570b150-d85b-4373-a007-cebcbbedbfc4)
+
 # Reference:
 Youtube Playlist: [@IamTimCorey](https://www.youtube.com/playlist?list=PLLWMQd6PeGY3IxROaW7Hj8KFbRPg1x7mc),
 I learnt all these tips from this youtube playlist. If you are new checkit out his videos for indepth knowledge.
