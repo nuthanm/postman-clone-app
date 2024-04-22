@@ -11,7 +11,8 @@ public partial class Dashboard : Form
     {
         // async void => When it's an event
 
-        // Validate API URl
+        // Validate API URl => We pushed this logic in Library project
+        // We can reuse even if UI application is different and loosely coupled.
 
 
         try
