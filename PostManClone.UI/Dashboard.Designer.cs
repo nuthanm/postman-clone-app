@@ -47,7 +47,7 @@ partial class Dashboard
         statusStrip.Name = "statusStrip";
         statusStrip.Size = new Size(1087, 32);
         statusStrip.TabIndex = 0;
-        statusStrip.Text = "statusStrip1";
+        statusStrip.Text = "Ready";
         // 
         // apiStatus
         // 
@@ -115,7 +115,6 @@ partial class Dashboard
         // 
         AutoScaleDimensions = new SizeF(20F, 48F);
         AutoScaleMode = AutoScaleMode.Font;
-        AutoSizeMode = AutoSizeMode.GrowAndShrink;
         ClientSize = new Size(1087, 864);
         Controls.Add(resultsLabel);
         Controls.Add(resultsText);
@@ -125,12 +124,13 @@ partial class Dashboard
         Controls.Add(formHeader);
         Controls.Add(statusStrip);
         Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+        FormBorderStyle = FormBorderStyle.FixedDialog;
         Margin = new Padding(6);
         MaximizeBox = false;
         MinimizeBox = false;
         Name = "Dashboard";
         StartPosition = FormStartPosition.CenterScreen;
-        Text = "Postman Clone App By Nuthan(Nani)";
+        Text = "Postman Clone App By Nuthan";
         statusStrip.ResumeLayout(false);
         statusStrip.PerformLayout();
         ResumeLayout(false);
