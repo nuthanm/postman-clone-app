@@ -11,6 +11,9 @@ public partial class Dashboard : Form
     {
         // async void => When it's an event
 
+        // Validate API URl
+
+
         try
         {
             apiStatus.Text = "Calling API...";

@@ -41,13 +41,14 @@ partial class Dashboard
         // 
         // statusStrip
         // 
+        statusStrip.BackColor = Color.White;
         statusStrip.ImageScalingSize = new Size(24, 24);
         statusStrip.Items.AddRange(new ToolStripItem[] { apiStatus });
-        statusStrip.Location = new Point(0, 832);
+        statusStrip.Location = new Point(0, 866);
         statusStrip.Name = "statusStrip";
-        statusStrip.Size = new Size(1087, 32);
+        statusStrip.Size = new Size(1004, 32);
         statusStrip.TabIndex = 0;
-        statusStrip.Text = "Ready";
+        statusStrip.Text = "API Status";
         // 
         // apiStatus
         // 
@@ -77,17 +78,17 @@ partial class Dashboard
         // 
         // textBox1
         // 
-        textBox1.Location = new Point(19, 116);
+        textBox1.Location = new Point(25, 116);
         textBox1.Name = "textBox1";
-        textBox1.Size = new Size(937, 55);
+        textBox1.Size = new Size(862, 55);
         textBox1.TabIndex = 3;
         // 
         // apiClick
         // 
         apiClick.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-        apiClick.Location = new Point(984, 116);
+        apiClick.Location = new Point(890, 116);
         apiClick.Name = "apiClick";
-        apiClick.Size = new Size(72, 54);
+        apiClick.Size = new Size(72, 55);
         apiClick.TabIndex = 4;
         apiClick.Text = "Go";
         apiClick.UseVisualStyleBackColor = true;
@@ -95,9 +96,13 @@ partial class Dashboard
         // 
         // resultsText
         // 
+        resultsText.BackColor = Color.White;
+        resultsText.BorderStyle = BorderStyle.FixedSingle;
         resultsText.Location = new Point(25, 265);
         resultsText.Multiline = true;
         resultsText.Name = "resultsText";
+        resultsText.ReadOnly = true;
+        resultsText.ScrollBars = ScrollBars.Both;
         resultsText.Size = new Size(937, 545);
         resultsText.TabIndex = 5;
         // 
@@ -115,7 +120,8 @@ partial class Dashboard
         // 
         AutoScaleDimensions = new SizeF(20F, 48F);
         AutoScaleMode = AutoScaleMode.Font;
-        ClientSize = new Size(1087, 864);
+        BackColor = Color.White;
+        ClientSize = new Size(1004, 898);
         Controls.Add(resultsLabel);
         Controls.Add(resultsText);
         Controls.Add(apiClick);
