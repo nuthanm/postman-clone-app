@@ -19,6 +19,43 @@ Objective of this project is to avoid using external tool like postman for simpl
 ## Initial Design
 ![image](https://github.com/nuthanm/postman-clone-app/assets/29816449/b570b150-d85b-4373-a007-cebcbbedbfc4)
 
+## Sample UI with JSON Response in result window with unreadable format
+```
+var response = await client.GetAsync(url);
+
+if(response.IsSuccessStatusCode)
+{
+    string json = await response.Content.ReadAsStringAsync();
+    return json;
+}
+else
+{
+    return $"Error: {response.StatusCode}";
+}
+```
+## Response for the above code
+![image](https://github.com/nuthanm/postman-clone-app/assets/29816449/9e069329-0b39-47a7-9dda-ae3473419798)
+
+## Sample UI with JSON Response in result window with indented/readable format
+```
+var response = await client.GetAsync(url);
+
+if (response.IsSuccessStatusCode)
+{
+    string json = await response.Content.ReadAsStringAsync();
+    var jsonElement = JsonSerializer.Deserialize<JsonElement>(json);
+    var jsonPretty = JsonSerializer.Serialize(jsonElement,
+        new JsonSerializerOptions { WriteIndented = true });
+    return jsonPretty;
+}
+else
+{
+    return $"Error: {response.StatusCode}";
+}
+```
+## Response for the above code
+![image](https://github.com/nuthanm/postman-clone-app/assets/29816449/5e6d71d0-b679-4ee5-bd0a-7e6b16157441)
+
 # Reference:
 Youtube Playlist: [@IamTimCorey](https://www.youtube.com/playlist?list=PLLWMQd6PeGY3IxROaW7Hj8KFbRPg1x7mc),
 I learnt all these tips from this youtube playlist. If you are new checkit out his videos for indepth knowledge.
