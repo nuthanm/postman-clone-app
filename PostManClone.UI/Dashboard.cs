@@ -4,8 +4,8 @@ namespace PostManClone.UI;
 
 public partial class Dashboard : Form
 {
-    private readonly ApiAccess api = new();
-    
+    private readonly IApiAccess api = new ApiAccess();
+
     public Dashboard()
     {
         InitializeComponent();
@@ -28,10 +28,10 @@ public partial class Dashboard : Form
 
         try
         {
-            
+
 
             resultsText.Text = await api.CallApiAsync(apiText.Text);
-            
+
             apiStatus.Text = "Ready";
         }
         catch (Exception ex)

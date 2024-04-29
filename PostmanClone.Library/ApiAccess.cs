@@ -1,18 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Text.Json;
-using System.Threading.Tasks;
+﻿using System.Text.Json;
 
 namespace PostmanClone.Library;
 
-public class ApiAccess
+public class ApiAccess : IApiAccess
 {
     private readonly HttpClient client = new();
 
     public async Task<string> CallApiAsync(
-        string url, 
+        string url,
         bool formatOutput = true,
         HttpAction action = HttpAction.GET)
     {
@@ -37,7 +32,7 @@ public class ApiAccess
 
     public bool IsValidUrl(string url)
     {
-        if(string.IsNullOrEmpty(url)) return false;
+        if (string.IsNullOrEmpty(url)) return false;
 
         // Step 1; Uri.TryCreate(url, UriKind.Absolute, out Uri uriOutput) 
         // Parse the url and create uri and returns true
