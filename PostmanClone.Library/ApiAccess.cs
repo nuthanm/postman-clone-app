@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
 
 namespace PostmanClone.Library;
@@ -14,10 +15,13 @@ public class ApiAccess
     {
         var response = await client.GetAsync(url);
 
-        if(response.IsSuccessStatusCode)
+        if (response.IsSuccessStatusCode)
         {
             string json = await response.Content.ReadAsStringAsync();
-            return json;
+            var jsonElement = JsonSerializer.Deserialize<JsonElement>(json);
+            var jsonPretty = JsonSerializer.Serialize(jsonElement,
+                new JsonSerializerOptions { WriteIndented = true });
+            return jsonPretty;
         }
         else
         {

@@ -5,6 +5,7 @@ namespace PostManClone.UI;
 public partial class Dashboard : Form
 {
     private readonly ApiAccess api = new();
+    
     public Dashboard()
     {
         InitializeComponent();
