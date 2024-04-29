@@ -1,7 +1,10 @@
+using PostmanClone.Library;
+
 namespace PostManClone.UI;
 
 public partial class Dashboard : Form
 {
+    private readonly ApiAccess api = new();
     public Dashboard()
     {
         InitializeComponent();
@@ -19,6 +22,7 @@ public partial class Dashboard : Form
         {
             apiStatus.Text = "Calling API...";
 
+            resultsText.Text = await api.CallApiAsync("");
             // Todo: To see the behaviour of status strip we added this Delay.
             await Task.Delay(2000);
 
