@@ -22,10 +22,8 @@ public partial class Dashboard : Form
         {
             apiStatus.Text = "Calling API...";
 
-            resultsText.Text = await api.CallApiAsync("");
-            // Todo: To see the behaviour of status strip we added this Delay.
-            await Task.Delay(2000);
-
+            resultsText.Text = await api.CallApiAsync(apiText.Text);
+            
             apiStatus.Text = "Ready";
         }
         catch (Exception ex)

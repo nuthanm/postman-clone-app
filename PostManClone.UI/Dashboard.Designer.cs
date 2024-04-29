@@ -32,7 +32,7 @@ partial class Dashboard
         apiStatus = new ToolStripStatusLabel();
         formHeader = new Label();
         apiLabel = new Label();
-        textBox1 = new TextBox();
+        apiText = new TextBox();
         apiClick = new Button();
         resultsText = new TextBox();
         resultsLabel = new Label();
@@ -76,12 +76,12 @@ partial class Dashboard
         apiLabel.TabIndex = 2;
         apiLabel.Text = "API Url:";
         // 
-        // textBox1
+        // apiText
         // 
-        textBox1.Location = new Point(25, 116);
-        textBox1.Name = "textBox1";
-        textBox1.Size = new Size(862, 55);
-        textBox1.TabIndex = 3;
+        apiText.Location = new Point(25, 116);
+        apiText.Name = "apiText";
+        apiText.Size = new Size(862, 55);
+        apiText.TabIndex = 3;
         // 
         // apiClick
         // 
@@ -125,7 +125,7 @@ partial class Dashboard
         Controls.Add(resultsLabel);
         Controls.Add(resultsText);
         Controls.Add(apiClick);
-        Controls.Add(textBox1);
+        Controls.Add(apiText);
         Controls.Add(apiLabel);
         Controls.Add(formHeader);
         Controls.Add(statusStrip);
@@ -148,7 +148,7 @@ partial class Dashboard
     private StatusStrip statusStrip;
     private Label formHeader;
     private Label apiLabel;
-    private TextBox textBox1;
+    private TextBox apiText;
     private Button apiClick;
     private TextBox resultsText;
     private Label resultsLabel;
