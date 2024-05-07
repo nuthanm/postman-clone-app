@@ -16,8 +16,8 @@ Objective of this project is to avoid using external tool like postman for simpl
 - .NET 8
 
 # Postman Windows Form Designs
-## Initial Design
-![image](https://github.com/nuthanm/postman-clone-app/assets/29816449/b570b150-d85b-4373-a007-cebcbbedbfc4)
+### Initial Design 
+![PostMan Initial Clone App Design](Images/Postmanmainwindow.PNG "Postman Clone App Main Window")
 
 ## Sample UI with JSON Response in result window with unreadable format
 ```
