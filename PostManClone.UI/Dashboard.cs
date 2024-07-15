@@ -13,7 +13,7 @@ public partial class Dashboard : Form
 
     private async void apiClick_Click(object sender, EventArgs e)
     {
-        apiStatus.Text = "Calling API....";
+        apiStatus.Text = "Calling API...";
         resultsText.Text = string.Empty;
 
         // async void => When it's an event
